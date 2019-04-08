@@ -1,53 +1,40 @@
-/*
 @font-face {
-  font-family: 'Ubuntu';
-  src: url('../fonts/ubuntu-b-webfont.woff2') format('woff2'),
-  url('../fonts/ubuntu-b-webfont.woff') format('woff'),
-  url('../fonts/ubuntu-b-webfont.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-
-}
-@font-face {
-  font-family: 'Ubuntu';
-  src: url('../fonts/ubuntu-light-webfont.woff2') format('woff2'),
-  url('../fonts/ubuntu-light-webfont.woff') format('woff'),
-  url('../fonts/Ubuntu-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-
-}
-@font-face {
-  font-family: 'Ubuntu';
-  src: url('../fonts/ubuntu-medium-webfont.woff2') format('woff2'),
-  url('../fonts/ubuntu-medium-webfont.woff') format('woff'),
-  url('../fonts/ubuntu-medium-webfont.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-
-}
-@font-face {
-  font-family: 'Ubuntu';
-  src: url('../fonts/ubuntu-regular-webfont.woff2') format('woff2'),
-  url('../fonts/ubuntu-regular-webfont.woff') format('woff'),
-  url('../fonts/Ubuntu-Regular.ttf') format('truetype');
+  font-family: 'bravoSC';
+  src: url('../fonts/bravosc-webfont.woff2') format('woff2'),
+  url('../fonts/bravosc-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+
 }
+
 @font-face {
-  font-family: 'Gagalin-Regular';
-  src: url('../fonts/gagalin-regular-webfont.woff2') format('woff2'),
-  url('../fonts/gagalin-regular-webfont.woff') format('woff'),
-  url('../fonts/gagalin-regular-webfont.ttf') format('truetype');
+  font-family: 'nautilus_pompilius';
+  src: url('../fonts/8343-webfont.woff2') format('woff2'),
+  url('../fonts/8343-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Lifehack-Medium';
-  src: url('../fonts/lifehack_medium-webfont.woff2') format('woff2'),
-  url('../fonts/lifehack_medium-webfont.woff') format('woff'),
-  url('../fonts/lifehack_medium-webfont.ttf') format('truetype');
+  font-family: 'PTS';
+  src: url('../fonts/pt_sans-web-bold-webfont.woff2') format('woff2'),
+  url('../fonts/pt_sans-web-bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTS';
+  src: url('../fonts/pt_sans-web-italic-webfont.woff2') format('woff2'),
+  url('../fonts/pt_sans-web-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PTS';
+  src: url('../fonts/pt_sans-web-regular-webfont.woff2') format('woff2'),
+  url('../fonts/pt_sans-web-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-}*/
+}

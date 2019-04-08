@@ -1,0 +1,38 @@
+//fonts
+@mixin  bravoSC() {
+  font-family: 'bravoSC', Helvetiva, sans-serif;
+}
+
+@mixin  nautilius_pompilius() {
+  font-family: 'nautilus_pompilius', Helvetiva, sans-serif;
+}
+
+@mixin PTS ($type: normal) {
+  font-family: 'PTS', Helvetiva, sans-serif;
+
+  @if $type == bold {
+    font-weight: 700;
+  }
+
+  @if $type == italic {
+    font-style: italic;
+  }
+}
+
+//px to em
+@function rem($px){
+  @return $px / 16px + 0rem
+}
+
+//display width
+@mixin tablets {
+  @media screen and (max-width: $tablets) {
+    @content;
+  }
+}
+
+@mixin phones {
+  @media screen and (max-width: $phones) {
+    @content;
+  }
+}

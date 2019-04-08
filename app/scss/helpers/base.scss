@@ -1,0 +1,24 @@
+#foo {
+  color: $mainColor;
+  @include nautilius_pompilius;
+}
+
+#foo1 {
+  color: $titleColor;
+  @include PTS();
+}
+
+#foo2 {
+  color: $secondTitleColor;
+  @include PTS(bold);
+}
+
+#foo3 {
+  color: darkblue;
+  @include PTS(italic);
+}
+
+#foo4 {
+  color: darkolivegreen;
+  @include bravoSC();
+}

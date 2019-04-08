@@ -2,10 +2,9 @@
 @import 'helpers/fa-all';
 @import 'helpers/var';
 @import 'helpers/mixins';
+@import 'fonts/*.scss';
 @import 'helpers/base';
 
-@import 'fonts/*.scss';
-
-@import 'section/**/*.scss';
+@import 'section/*.scss';
 
 @import 'components/*.scss';
