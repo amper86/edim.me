@@ -1,0 +1,19 @@
+.content {
+  width: 50%;
+
+  &__title {
+    text-align: left;
+    @include PTS(bold);
+    color: #ffffff;
+    white-space: pre;
+    font-size: rem(60px);
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    @include nautilius_pompilius;
+    color: $titleColor;
+    font-size: rem(53px);
+    text-transform: lowercase;
+  }
+}

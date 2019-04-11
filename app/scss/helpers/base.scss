@@ -1,24 +1,75 @@
-#foo {
-  color: $mainColor;
-  @include nautilius_pompilius;
+html,
+body {
+  height: 100%;
+  font-size: 16px;
+  @include tablets {
+    font-size: 15px;
+  }
+  @include phones {
+    font-size: 14px;
+  }
 }
 
-#foo1 {
-  color: $titleColor;
+body {
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
   @include PTS();
+  background-color: $mainColor;
 }
 
-#foo2 {
-  color: $secondTitleColor;
-  @include PTS(bold);
+//ToDo: Закоментировал до того как сделаю one page scroll
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  //overflow: hidden;
+}
+/*.page-scroll {
+  height: 100%;
+  transition: 1s;
+  will-change: transform;
+}*/
+.section {
+  //height: 100%;
+  height: 100vh;
+  width: 100%;
 }
 
-#foo3 {
-  color: darkblue;
-  @include PTS(italic);
+// style reset
+* {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  font-weight: normal;
 }
 
-#foo4 {
-  color: darkolivegreen;
-  @include bravoSC();
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  li {
+    list-style: none;
+  }
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
 }

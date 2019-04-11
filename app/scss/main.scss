@@ -5,6 +5,6 @@
 @import 'fonts/*.scss';
 @import 'helpers/base';
 
-@import 'section/*.scss';
+@import 'section/**/*.scss';
 
 @import 'components/*.scss';

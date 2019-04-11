@@ -1,0 +1,21 @@
+.header {
+  width: 100%;
+  padding-top: 38px;
+  color: #ffffff;
+
+  &__line {
+    height: 32px;
+    background-color: $mainColor;
+  }
+
+  &__wrapper {
+    width: 1330px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    // align-items: center;
+  }
+}
