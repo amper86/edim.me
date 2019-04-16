@@ -1,0 +1,45 @@
+.info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 rem(90px) rem(25px);
+
+  &__social {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    margin-right: rem(15px);
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    color: #ffffff;
+    font-size: rem(45px);
+
+    &:hover {
+      color: $titleColor;
+    }
+  }
+
+  &__catalog-link {
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    font-size: rem(70px);
+    line-height: 0;
+
+    &:hover {
+      color: $titleColor;
+    }
+
+    & span {
+      font-size: rem(11px);
+      @include PTS(bold);
+      text-transform: uppercase;
+    }
+  }
+}

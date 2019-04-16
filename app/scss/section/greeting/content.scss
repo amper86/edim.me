@@ -5,9 +5,9 @@
     text-align: left;
     @include PTS(bold);
     color: #ffffff;
-    white-space: pre;
     font-size: rem(60px);
     text-transform: uppercase;
+    line-height: rem(55px);
   }
 
   &__subtitle {
