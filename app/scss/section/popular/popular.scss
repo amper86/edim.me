@@ -1,0 +1,34 @@
+.popular {
+
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url("../images/popular_bg.jpg") no-repeat center/cover;
+    overflow: hidden;
+  }
+
+  &__parallax {
+    width: 100%;
+    height: 80%;
+    background: url("../images/bg_parallax.jpg") no-repeat center/cover;
+  }
+
+  &__parallax-layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    will-change: transform;
+  }
+
+  &__parallax-img {
+    height: 30%;
+    position: absolute;
+    bottom: -0.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 110%;
+  }
+}
