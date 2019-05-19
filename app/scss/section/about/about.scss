@@ -1,0 +1,48 @@
+.about {
+  height: auto;
+  padding: 4% 0;
+  //todo: фон картинка с артефактами!! переделать под не битую или about1.jpg
+  background: url("../images/about-bg.jpg") no-repeat top center / cover;
+
+  &__wrapper {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin-bottom: rem(25px);
+    padding: 0 rem(110px);
+    @include PTS(bold);
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: rem(60px);
+    line-height: rem(45px);
+
+    & span {
+      text-transform: lowercase;
+      @include nautilius_pompilius;
+      color: $secondTitleColor;
+      font-size: rem(36px);
+    }
+  }
+
+  &__content {
+    width: 50%;
+    padding: 0 rem(110px);
+    color: #ffffff;
+    @include PTS(bold);
+    font-size: rem(18px);
+  }
+
+  &__paragraph {
+    margin-bottom: rem(15px);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__list {
+    margin-bottom: rem(15px);
+  }
+}

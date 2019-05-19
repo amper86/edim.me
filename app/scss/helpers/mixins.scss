@@ -25,12 +25,22 @@
 }
 
 //display width
+
+//1200px
+@mixin desktop {
+  @media screen and (max-width: $desktop) {
+    @content;
+  }
+}
+
+//992px
 @mixin tablets {
   @media screen and (max-width: $tablets) {
     @content;
   }
 }
 
+//768px
 @mixin phones {
   @media screen and (max-width: $phones) {
     @content;
