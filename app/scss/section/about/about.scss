@@ -1,7 +1,7 @@
 .about {
   height: auto;
   padding: 4% 0;
-  //todo: фон картинка с артефактами!! переделать под не битую или about1.jpg
+  //todo: фон картинка с артефактами!! переделать под не битую или about1.jpg так-же можно затенить фон или сделать тени букв
   background: url("../images/about-bg.jpg") no-repeat top center / cover;
 
   &__wrapper {
@@ -39,6 +39,10 @@
 
     &:last-child {
       margin-bottom: 0;
+    }
+
+    &_bold {
+      font-size: rem(24px);
     }
   }
 

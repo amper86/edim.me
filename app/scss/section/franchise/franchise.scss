@@ -1,0 +1,54 @@
+.franchise {
+  background: url("../images/hands.png") no-repeat left bottom 4% / 100% 60%,
+          url("../images/category_bg.jpg") no-repeat center / cover;
+
+  color: $mainColor;
+
+  &__wrapper {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: rem(25px) rem(110px);
+  }
+
+  &__title {
+    @include PTS(bold);
+    font-size: rem(60px);
+    margin-bottom: rem(20px);
+  }
+
+  &__content {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  &__content-title {
+    @include nautilius_pompilius;
+    font-size: rem(30px);
+    margin-bottom: rem(15px);
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    @include PTS(bold);
+    font-size: rem(18px);
+  }
+
+  &__column-left {
+    width: 45%;
+    margin-right: 10%;
+  }
+
+  &__column-right {
+    width: 45%;
+  }
+
+  &__item {
+    margin-bottom: rem(5px);
+
+    &:first-child {
+      margin-top: rem(10px);
+    }
+  }
+}
+//todo: что-то нужно сделать с фоном текста или тенями, чтобы было видно. так же параллакс и анимацию
