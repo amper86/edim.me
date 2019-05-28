@@ -1,0 +1,36 @@
+.address {
+
+  &__container {
+    display: flex;
+  }
+
+  &__title {
+    margin-bottom: rem(10px);
+    padding-right: 25%;
+    font-size: rem(36px);
+    text-transform: uppercase;
+    @include PTS(bold);
+    line-height: rem(45px);
+  }
+
+  &__icon-container {
+    padding-top: rem(5px);
+    width: 50px;
+    height: 60px;
+    margin-right: rem(5px);
+  }
+
+  &__icon {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__item {
+    margin-bottom: rem(3px);
+  }
+
+  &__paragraph {
+    @include PTS(bold);
+    font-size: rem(16px);
+  }
+}

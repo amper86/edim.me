@@ -1,0 +1,21 @@
+.contacts {
+  background-color: #ffffff;
+  color: $mainColor;
+
+  &__wrapper {
+    max-width: 1500px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 4% rem(110px);
+    display: flex;
+  }
+
+  &__text-column {
+    width: 30%;
+    flex-shrink: 0;
+  }
+
+  &__map-column {
+    width: 70%;
+  }
+}
