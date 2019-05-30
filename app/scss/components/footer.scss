@@ -1,0 +1,89 @@
+.footer {
+  width: 100%;
+  background-color: $mainColor;
+
+  &__wrapper {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: rem(30px) rem(110px) rem(25px);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__menu {
+    width: 30%;
+    font-size: 0;
+  }
+
+  &__logo-container {
+    width: rem(170px);
+    margin-right: rem(50px);
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  &__logo {
+    width: 100%;
+  }
+
+  &__list {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  &__item {
+    margin-bottom: 8px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: rem(11px);
+    color: #ffffff;
+    @include PTS(bold);
+  }
+
+  &__contacts {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    @include PTS(bold);
+  }
+
+  &__contacts-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: rem(20px);
+    text-transform: uppercase;
+  }
+
+  &__address {
+    color: #ffffff;
+    font-size: rem(20px);
+    text-transform: uppercase;
+  }
+
+  &__booklet {
+    vertical-align: bottom;
+    height: 100%;
+  }
+
+  &__booklet-link {
+    display: inline-block;
+    color: #ffffff;
+    font-size: rem(70px);
+    line-height: 0;
+    text-align: center;
+
+    & span {
+      font-size: rem(11px);
+      @include PTS(bold);
+      text-transform: uppercase;
+    }
+  }
+}
+//todo: переделать иконку и сделать анимацию
