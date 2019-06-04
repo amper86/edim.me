@@ -33,13 +33,20 @@
 
   &__item {
     margin-bottom: 8px;
+    font-size: 0;
 
     &:last-child {
       margin-bottom: 0;
     }
+
+    &:hover .footer__link{
+      color: $titleColor;
+    }
   }
 
   &__link {
+    display: inline-block;
+    width: 100%;
     text-transform: uppercase;
     text-decoration: none;
     font-size: rem(11px);
@@ -51,6 +58,7 @@
     width: 50%;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     @include PTS(bold);
   }
 
@@ -59,6 +67,10 @@
     color: #ffffff;
     font-size: rem(20px);
     text-transform: uppercase;
+
+    &:hover {
+      color: $titleColor;
+    }
   }
 
   &__address {
@@ -68,22 +80,29 @@
   }
 
   &__booklet {
-    vertical-align: bottom;
-    height: 100%;
-  }
-
-  &__booklet-link {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: #ffffff;
-    font-size: rem(70px);
-    line-height: 0;
-    text-align: center;
 
-    & span {
-      font-size: rem(11px);
-      @include PTS(bold);
-      text-transform: uppercase;
+    &:hover .footer__icon {
+      color: $titleColor;
+    }
+
+    &:hover .footer__icon-text {
+      color: $titleColor;
     }
   }
+
+  &__icon {
+    color: #ffffff;
+    font-size: rem(70px);
+  }
+
+  &__icon-text {
+    font-size: rem(11px);
+    @include PTS(bold);
+    text-transform: uppercase;
+  }
 }
-//todo: переделать иконку и сделать анимацию

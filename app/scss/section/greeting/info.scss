@@ -25,21 +25,30 @@
     }
   }
 
-  &__catalog-link {
-    display: inline-block;
+  &__booklet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: #ffffff;
-    text-align: center;
-    font-size: rem(70px);
-    line-height: 0;
 
-    &:hover {
+    &:hover .info__icon {
       color: $titleColor;
     }
 
-    & span {
-      font-size: rem(11px);
-      @include PTS(bold);
-      text-transform: uppercase;
+    &:hover .info__icon-text {
+      color: $titleColor;
     }
+  }
+
+  &__icon {
+    color: #ffffff;
+    font-size: rem(70px);
+  }
+
+  &__icon-text {
+    font-size: rem(11px);
+    @include PTS(bold);
+    text-transform: uppercase;
   }
 }
