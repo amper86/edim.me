@@ -41,6 +41,7 @@
 
     &:hover .footer__link{
       color: $titleColor;
+      transition: color 300ms ease;
     }
   }
 
@@ -67,6 +68,7 @@
     color: #ffffff;
     font-size: rem(20px);
     text-transform: uppercase;
+    transition: color 300ms ease;
 
     &:hover {
       color: $titleColor;
@@ -88,10 +90,12 @@
 
     &:hover .footer__icon {
       color: $titleColor;
+      transition: color 300ms ease;
     }
 
     &:hover .footer__icon-text {
       color: $titleColor;
+      transition: color 300ms ease;
     }
   }
 

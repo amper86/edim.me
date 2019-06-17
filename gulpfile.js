@@ -107,11 +107,12 @@ gulp.task('files', function () {
 
 gulp.task('serve', function () {
     browserSync.init({
+        online: true, // без этого не показывает external URL
         server: {
             baseDir: paths.build
         }
     });
-    browserSync.watch(paths.build + '**/*.*').on('change', browserSync.reload);
+    browserSync.watch(paths.build + '**/*.*').on('change', browserSync.reload, {});
 });
 
 //очистка

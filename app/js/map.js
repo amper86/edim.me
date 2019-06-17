@@ -4,6 +4,7 @@ ymaps.ready(() => {
     controls: ['geolocationControl', 'zoomControl'],
     zoom: 11,
   });
+
   const mitino = new ymaps.Placemark([55.847674, 37.349434], {
     hintContent: '3-й Митинский переулок, дом 3',
     balloonContent: 'адрес дописать...'
@@ -13,9 +14,15 @@ ymaps.ready(() => {
     iconImageSize: [30, 60],
     iconImageOffset: [-15, -50]
   });
+  const bodyhtml = '<h2 class="map__title">это разметка</h2>';
+
   const tushino = new ymaps.Placemark([55.828202, 37.439679], {
-    hintContent: 'ул. Тушинская 24с15',
-    balloonContent: 'адрес дописать...'
+    //https://tech.yandex.ru/maps/jsbox/2.1/balloon_html todo: доделать когда будет понятно что всавляем
+    hintContent: 'всплывающая подсказка',
+    balloonContent: 'содержимое геобъекта',
+    balloonContentHeader: 'заголовок балуна',
+    balloonContentBody: 'main',
+    balloonContentFooter: 'footer'
   }, {
     iconLayout: 'default#image',
     iconImageHref: 'images/map_marker_brown.svg',

@@ -2,6 +2,9 @@
   display: flex;
   justify-content: space-between;
   padding: 0 rem(90px) rem(25px);
+  @include tablets {
+    padding: 0 rem(10px) rem(5px);
+  }
 
   &__social {
     display: flex;
@@ -22,6 +25,7 @@
 
     &:hover {
       color: $titleColor;
+      transition: color 300ms ease;
     }
   }
 
@@ -34,10 +38,12 @@
 
     &:hover .info__icon {
       color: $titleColor;
+      transition: color 300ms ease;
     }
 
     &:hover .info__icon-text {
       color: $titleColor;
+      transition: color 300ms ease;
     }
   }
 

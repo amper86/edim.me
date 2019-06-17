@@ -2,10 +2,16 @@
   width: 100%;
   padding-top: 38px;
   color: #ffffff;
+  @include tablets {
+    padding-top: 0;
+  }
 
   &__line {
     height: 32px;
     background-color: $mainColor;
+    @include tablets {
+      height: 50px;
+    }
   }
 
   &__wrapper {
@@ -16,5 +22,9 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    @include tablets {
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 }

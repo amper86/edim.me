@@ -1,0 +1,8 @@
+.map {
+  &__title {
+    color: red;
+    @include PTS(bold);
+    font-size: rem(16px);
+  }
+}
+//todo: стилизовать балуны в карте
