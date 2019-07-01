@@ -11,6 +11,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    overflow: hidden;
   }
 
   &__item {
@@ -22,9 +23,34 @@
     font-size: rem(16px);
     color: #ffffff;
 
+    @include tablets {
+      font-size: rem(24px);
+    }
+
     &:hover {
       color: $titleColor;
       transition: color 300ms ease;
     }
   }
+
+  &_active {
+    display: block;
+    margin-bottom: 5%;
+
+    & .nav__list {
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 0;
+    }
+
+    & .nav__item {
+      margin-bottom: rem(15px);
+      //transform: translateX(-9999px);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
+//todo: нужно заанимировать появление написей в меню с помощью animejs

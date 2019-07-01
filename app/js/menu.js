@@ -1,16 +1,25 @@
 document.addEventListener('DOMContentLoaded', function() {
   const hamburgerMenu = document.querySelector('.hamburger-menu');
+  const wrapper = document.querySelector('.header__wrapper');
+  const nav = document.querySelector('.nav');
+  const logo = document.querySelector('.logo');
   const hamburgerButtonActive = 'hamburger-menu_active';
+  const wrapperActive = 'header__wrapper_active';
+  const navActive = 'nav_active';
+  const logoActive = 'logo_active';
 
   const toggleFunc = () => {
     if(hamburgerMenu.classList.contains(hamburgerButtonActive)) {
       hamburgerMenu.classList.remove(hamburgerButtonActive);
-      //logo.classList.remove('logo_active');
-      //headerWrapper.style.padding = null;
+      wrapper.classList.remove(wrapperActive);
+      nav.classList.remove(navActive);
+      logo.classList.remove(logoActive);
     }else{
       hamburgerMenu.classList.add(hamburgerButtonActive);
-      //logo.classList.add('logo_active');
-      //headerWrapper.style.padding = '0';
+      wrapper.classList.add(wrapperActive);
+      nav.classList.add(navActive);
+      logo.classList.add(logoActive);
+
     }
 
     /*if(nav.classList.contains(mobileMenuActive)) {

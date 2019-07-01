@@ -11,6 +11,11 @@
     padding-left: 5px;
   }
 
+  &_active {
+    width: rem(170px);
+    height: rem(130px);
+  }
+
   &__link {
     display: block;
     //width: rem(170px);
