@@ -15,7 +15,9 @@
   }
 
   &__item {
-
+    @include tablets {
+      //transform: translateX(-999px);
+    }
   }
 
   &__link {
@@ -45,7 +47,7 @@
 
     & .nav__item {
       margin-bottom: rem(15px);
-      //transform: translateX(-9999px);
+
 
       &:last-child {
         margin-bottom: 0;
@@ -53,4 +55,4 @@
     }
   }
 }
-//todo: нужно заанимировать появление написей в меню с помощью animejs
+
