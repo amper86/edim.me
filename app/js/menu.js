@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
       anime({
         targets: '.header__wrapper',
         height: windowHeight,
-        duration: 100,
+        duration: 50,
         easing: 'spring(1, 80, 10, 0)'
       });
 
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
         targets: '.nav__item',
         translateX: -999,
         direction: 'reverse',
-        delay: anime.stagger(100, {direction: 'reverse'}, {start: 100}), // increase delay by 100ms for each elements.
+        delay: anime.stagger(50, {direction: 'reverse'}, {start: 50}), // increase delay by 100ms for each elements.
         easing: 'easeInOutQuad'
       });
     }

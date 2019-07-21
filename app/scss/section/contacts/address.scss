@@ -17,10 +17,13 @@
     @include PTS(bold);
     line-height: rem(45px);
 
-    @include tablets {
+    @include desktop {
       font-size: rem(24px);
       line-height: rem(30px);
       padding-right: 0;
+    }
+
+    @include tablets {
       text-align: center;
     }
   }

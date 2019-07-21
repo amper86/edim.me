@@ -14,7 +14,7 @@
     text-transform: uppercase;
     font-size: rem(36px);
 
-    @include tablets {
+    @include desktop {
       font-size: rem(24px);
     }
   }
