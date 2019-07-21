@@ -4,6 +4,7 @@
   position: absolute;
   top: rem(-30px);
   left: 0;
+
   @include tablets {
     position: static;
     width: 50px;
@@ -11,9 +12,14 @@
     padding-left: 5px;
   }
 
+  //лого в мобильном меню
   &_active {
+    position: absolute;
     width: rem(170px);
     height: rem(130px);
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   &__link {
