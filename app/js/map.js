@@ -2,7 +2,7 @@ ymaps.ready(() => {
   const map = new ymaps.Map("map", {
     center: [55.75519455, 37.62768222],
     controls: ['geolocationControl', 'zoomControl'],
-    zoom: 11,
+    zoom: 9,
   });
 
   const mitino = new ymaps.Placemark([55.847674, 37.349434], {

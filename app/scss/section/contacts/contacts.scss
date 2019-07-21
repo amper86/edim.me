@@ -2,20 +2,53 @@
   background-color: #ffffff;
   color: $mainColor;
 
+  @include phones {
+    height: auto;
+  }
+
   &__wrapper {
     max-width: 1500px;
     height: 100%;
     margin: 0 auto;
     padding: 4% rem(110px);
     display: flex;
+
+    @include desktop {
+      padding: 4% rem(10px);
+    }
+
+    @include tablets {
+      padding: 0;
+    }
+
+    @include phones {
+      flex-direction: column;
+    }
   }
 
   &__text-column {
     width: 30%;
     flex-shrink: 0;
+
+    @include tablets {
+      width: 50%;
+    }
+
+    @include phones {
+      width: auto;
+    }
   }
 
   &__map-column {
     width: 70%;
+
+    @include tablets {
+      width: 50%;
+    }
+
+    @include phones {
+      width: 100%;
+      height: 250px;
+    }
   }
 }

@@ -1,4 +1,9 @@
 .address {
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   &__container {
     display: flex;
@@ -11,6 +16,13 @@
     text-transform: uppercase;
     @include PTS(bold);
     line-height: rem(45px);
+
+    @include tablets {
+      font-size: rem(24px);
+      line-height: rem(30px);
+      padding-right: 0;
+      text-align: center;
+    }
   }
 
   &__icon-container {
