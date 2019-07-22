@@ -46,3 +46,10 @@
     @content;
   }
 }
+
+//480px
+@mixin smallPhones {
+  @media screen and (max-width: $smallPhones) {
+    @content;
+  }
+}

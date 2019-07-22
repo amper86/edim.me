@@ -1,13 +1,25 @@
 .franchise {
   background: url("../images/hands.png") no-repeat left bottom 4% / 100% 60%,
           url("../images/category_bg.jpg") no-repeat center / cover;
-
   color: $mainColor;
+
+  @include tablets {
+    background: url("../images/category_bg.jpg") no-repeat center / cover;
+    height: auto;
+  }
 
   &__wrapper {
     max-width: 1500px;
     margin: 0 auto;
     padding: rem(25px) rem(110px);
+
+    @include phones {
+      padding: rem(25px) rem(30px);
+    }
+
+    @include phones {
+      padding: rem(25px) 10%;
+    }
   }
 
   &__title {
@@ -32,15 +44,30 @@
     flex-direction: row;
     @include PTS(bold);
     font-size: rem(18px);
+
+    @include smallPhones {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__column-left {
     width: 45%;
     margin-right: 10%;
+
+    @include smallPhones {
+      margin-right: 0;
+      width: 100%;
+      margin-bottom: rem(25px);
+    }
   }
 
   &__column-right {
     width: 45%;
+
+    @include smallPhones {
+      width: 100%;
+    }
   }
 
   &__item {

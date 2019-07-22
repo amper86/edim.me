@@ -47,5 +47,9 @@
   &__paragraph {
     @include PTS(bold);
     font-size: rem(16px);
+
+    @include phones {
+      font-size: rem(20px);
+    }
   }
 }
