@@ -1,12 +1,17 @@
 .about {
   height: auto;
-  padding: 4% 0;
   //todo: фон картинка с артефактами!! переделать под не битую или about1.jpg так-же можно затенить фон или сделать тени букв
   background: url("../images/about-bg.jpg") no-repeat top center / cover;
+
+  @include phones {
+    padding: 0;
+  }
 
   &__wrapper {
     max-width: 1500px;
     margin: 0 auto;
+    padding: 4% 0;
+    background: rgba(0, 0, 0, .5);
   }
 
   &__title {
@@ -17,6 +22,10 @@
     text-transform: uppercase;
     font-size: rem(60px);
     line-height: rem(45px);
+
+    @include smallPhones {
+      padding: 0 rem(10px);
+    }
 
     & span {
       text-transform: lowercase;
@@ -32,6 +41,15 @@
     color: #ffffff;
     @include PTS(bold);
     font-size: rem(18px);
+
+    @include phones {
+      width: 100%;
+      padding: 0 rem(55px);
+    }
+
+    @include  smallPhones {
+      padding: 0 rem(10px);
+    }
   }
 
   &__paragraph {
