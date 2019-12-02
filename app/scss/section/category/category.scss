@@ -1,6 +1,11 @@
 .category {
     background: url("../images/category_bg.jpg") no-repeat center/cover;
 
+  @include phones {
+    height: auto;
+    min-height: 100vh;
+  }
+
   &__title {
     max-width: 1500px;
     height: 10%;
@@ -10,6 +15,11 @@
     @include PTS(bold);
     color: $mainColor;
     font-size: rem(60px);
+
+    @include tablets {
+      padding: 0 0 rem(10px);
+      text-align: center;
+    }
   }
 
   &__wrapper {
@@ -17,56 +27,29 @@
     max-width: 1500px;
     height: 90%;
     padding: rem(15px) rem(110px) 5%;
+
+    @include tablets {
+      padding: rem(15px) rem(10px) 5%;;
+    }
   }
 
+  //todo: в первую очередь переделать категории, чтобы они могли добавляться!!!!
   //номер категории соответсвует порядковой букве алфавита)
   &__list {
     width: 100%;
     height: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas:
-            "a b c"
-            "d e c"
-            "f g g";
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   &__item {
     padding: 5px;
+    width: 33%;
 
-    &:nth-of-type(1) {
-      grid-area: a;
-    }
-
-    &:nth-of-type(2) {
-      grid-area: b;
-    }
-
-    &:nth-of-type(3) {
-      grid-area: c;
-    }
-
-    &:nth-of-type(4) {
-      grid-area: d;
-    }
-
-    &:nth-of-type(5) {
-      grid-area: e;
-    }
-
-    &:nth-of-type(6) {
-      grid-area: f;
-    }
-
-    &:nth-of-type(7) {
-      grid-area: g;
-
-      .category__text {
-        width: auto;
-        left: auto;
-        right: 0;
-      }
+    @include phones {
+      width: 50%;
+      min-height: rem(150px);
     }
   }
 
@@ -127,7 +110,11 @@
     @include PTS(bold);
     font-size: rem(36px);
     color: #ffffff;
-    line-height: 0.5;
+    line-height: rem(26px);
     z-index: 10;
+
+    @include smallPhones {
+      font-size: rem(24px);
+    }
   }
 }
